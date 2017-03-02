@@ -3,7 +3,7 @@ body {
   width: 100%;
   height: 100%;
 font-family: 'Roboto Condensed', sans-serif;
-background-color: black;
+background-color: white;
 }
 
 .slideout-menu {
@@ -14,6 +14,7 @@ background-color: black;
   right: 0;
   z-index: 0;
   width: 256px;
+  height: 644px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
@@ -37,7 +38,8 @@ background-color: black;
 /* Custom */
 #main {
   background: white;
-  height: 100vmin!important;
+  height: 100vh !important;
+  position: fixed;
 }
 
 #navbar-main {
@@ -51,6 +53,7 @@ background-color: black;
    color:#d0d0d0;
   border-bottom:1px solid #3e3c3a;
 }
+/*----------*/
 .FormSubmit
 {
   width: 90%;
@@ -62,7 +65,7 @@ background-color: black;
   border-radius: 2px;
 
 }
-/*----------*/
+
 .Support
 {
   width: 90%;
@@ -73,7 +76,6 @@ background-color: black;
 }
 .Support p
 {
-  
   color:#d0d0d0;
 }
 .FormReg
@@ -90,9 +92,9 @@ background-color: black;
 .FormSubmit p, .FormReg p
 {
   text-transform: uppercase;
-  padding-top:5%; 
+  padding-top:4%; 
   font-weight: bold;
-  font-size: 14px;
+  font-size: 16px;
   color: #000;
 }
 nav h6
@@ -120,11 +122,211 @@ nav h6:nth-child(4)
 .fa-bars
 {
   color: black;
+  margin-top: 6px;
 }
-.btn
+article button
 {
-  background-color: white !important;
-  border:none !important;
-  box-shadow: none;
-  margin-left: -6px;
+  margin-left: -10px;
+}
+.Registr
+{
+	width: 100vh;
+	height: 545px;
+	background-image: url(./img/background-black.png);
+    background-size: 85px 73.5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 14px;
+    padding-top: 100px;
+    display: none;
+}
+.Login,.Password
+{
+	width: 53.5%;
+	height: 48px;
+	border: 0;
+    border: 1px solid #000;
+    background-color: #292725;
+    color: #7e7e7e;
+    font-size: 16px;
+    padding-left: 20px;
+    border-radius: 2px;
+}
+
+.FormSubmit:nth-child(3)
+{
+   width: 53.5%;
+   margin: 0;
+   margin-top: 12px;
+}
+.FormReg:nth-child(4)
+{
+   width: 53.5%;
+   margin: 0;
+   margin-top: 10px;
+}
+.Forgot
+{
+	margin-top: 10px;
+}
+.Forgot p
+{
+	color: #7e7e7e;
+	padding-left: 253px;
+
+}
+#navbar-main ul li a:focus{
+  background-color: black;
+  color: #f5ae1b;
+  cursor: default;
+}
+.Add
+{
+	width: 100vh;
+	height: 545px;
+	background-image: url(./img/background-black.png);
+    background-size: 85px 73.5px;
+    padding-left: 13px;
+    padding-top: 9px;
+}
+.YellowBlock
+{
+	width: 53.5%;
+	height: 150px;
+	border-radius: 2px;
+	background-image: linear-gradient(180deg,#fddb14 0%,#f5ae1b 100%);
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+.UserDepName
+{
+	width: 90%;
+	height: 17px;
+	margin-top: 10px;
+	display: flex;
+}
+.UserDepName p
+{
+   font-size: 16px;
+   font-weight: bold;
+}
+.UserDepName span
+{
+	padding-left: 70px;
+	font-size: 16px;
+}
+.UserDepBalance p
+{
+   font-size: 36px;
+   margin-top: 35px;
+}
+.UserDepBalance 
+{
+ display: flex;
+ align-items: center;
+}
+.GRN
+{
+	width: 26px;
+	height: 18px;
+	border: 1px solid #000;
+    border-radius: 2px;
+    padding-left:2px;
+    margin-left: 5px;
+}
+.UserDepSummary span:first-child
+{
+	padding-right: 113px;
+	font-size: 13px;
+}
+.DepTitle
+{
+	width: 250px;
+	height: 20px;
+	margin-left: 56px;
+	margin-top:20px; 
+	text-align: center;
+	font-size: 18px;
+	color: white;
+}
+
+.SubDepTitle
+{
+	width: 300px;
+	height: 15px;
+	color: #7e7e7e;
+	margin-left: 52px;
+	margin-top: 5px;
+	font-size: 12px;
+}
+.WalletOne
+{
+	width: 355px;
+	height: 60px;
+	background-color: white;
+	border-radius: 3px;
+	margin-top: 10px;
+	background-image: url(./img/w1-horizontal.png);
+    background-size: auto 32px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.LiqPay
+{
+   	width: 355px;
+	height: 60px;
+	background-color: white;
+	border-radius: 3px;
+	margin-top: 10px;
+	background-image: url(./img/liqpay.png);
+    background-size: auto 32px;
+    background-position: center;
+    background-repeat: no-repeat;	
+}
+.DepTerminal
+{
+	width: 365px;
+	text-align: center;
+	font-size: 15px;
+	color: white;
+	margin-top: 20px;
+}
+.DepTerminalIbox
+{
+	width: 140px;
+	height: 100px;
+	background-color: white;
+	margin-left: 35px;
+}
+.DepTerminalCity
+{
+	width: 140px;
+	height: 100px;
+	background-color: white;
+	margin-left: 195px;
+	margin-top: -100px;
+
+}
+
+
+
+
+
+
+.Footer
+{
+	width: 100vh;
+	height: 55px;
+	background-color: red;
+	display: flex;
+	align-content: stretch;
+}
+.container
+{
+	height: 44px;
+}
+.Sport,.Live,.Favorites,.SignIn,.Kupon
+{
+	width: 75px;
 }
