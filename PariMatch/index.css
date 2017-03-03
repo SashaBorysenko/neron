@@ -2,8 +2,7 @@
 body {
   width: 100%;
   height: 100%;
-font-family: 'Roboto Condensed', sans-serif;
-background-color: white;
+background-color: black;
 }
 
 .slideout-menu {
@@ -38,7 +37,7 @@ background-color: white;
 /* Custom */
 #main {
   background: white;
-  height: 100vh !important;
+  height: 644px !important;
   position: fixed;
 }
 
@@ -57,12 +56,13 @@ background-color: white;
 .FormSubmit
 {
   width: 90%;
-  height: 44px;
+  height: 68px;
   background-color: white;
   margin-left: 11px; 
   text-align: center;
   border: 1px solid #000;
   border-radius: 2px;
+  opacity: 0.9;
 
 }
 
@@ -188,7 +188,9 @@ article button
     background-size: 85px 73.5px;
     padding-left: 13px;
     padding-top: 9px;
+    padding-bottom: 12px;
     overflow: scroll;
+    display: none;
 }
 .YellowBlock
 {
@@ -209,13 +211,36 @@ article button
 }
 .UserDepName p
 {
-   font-size: 16px;
+   font-size: 14px;
    font-weight: bold;
 }
 .UserDepName span
 {
-	padding-left: 70px;
-	font-size: 16px;
+	padding-left: 65px;
+	font-size: 14px;
+}
+
+.FormSubmit .UserDepName 
+{
+	width: 95%;
+	height: 17px;
+	margin-top: 8px;
+	display: flex;
+	margin-left: 10px;
+}
+
+.FormSubmit .UserDepName p
+{
+   font-size: 13px;
+   font-weight: bold;
+   margin-top: -8px;
+   text-transform: none;
+
+}
+.FormSubmit .UserDepName span
+{
+	padding-left: 45px;
+	font-size: 13px;
 }
 .UserDepBalance p
 {
@@ -227,6 +252,13 @@ article button
  display: flex;
  align-items: center;
 }
+.FormSubmit .UserDepBalance p
+{
+   font-size: 22px;
+   margin-top: -1px;
+   margin-left: 12px;
+   font-weight: normal;
+}
 .GRN
 {
 	width: 26px;
@@ -234,6 +266,19 @@ article button
 	border: 1px solid #000;
     border-radius: 2px;
     padding-left:2px;
+    margin-left: 5px;
+    font-size: 13px;
+    margin-top: 15px;
+}
+.FormSubmit .GRN
+{
+	width: 24px;
+	height: 16px;
+	font-size: 10px;
+	border: 1px solid #000;
+    border-radius: 2px;
+    margin-top: -3px;
+    padding-left:1px;
     margin-left: 5px;
 }
 .UserDepSummary span:first-child
@@ -292,6 +337,7 @@ article button
 	font-size: 15px;
 	color: white;
 	margin-top: 20px;
+	line-height: 17px;
 }
 .DepTerminalIbox
 {
@@ -305,6 +351,30 @@ article button
 	background-position: center;
 	background-size: cover;
 }
+.Bank24
+{
+    background-image: url(./img/bank24.png);
+	background-position: center;
+	background-size: cover;
+}
+.ePay
+{
+    background-image: url(./img/e-pay.png);
+	background-position: center;
+	background-size: cover;
+}	
+.Privat
+{
+   background-image: url(./img/privat.png);
+	background-position: center;
+	background-size: cover;
+}
+.WidePay
+{
+	background-image: url(./img/widepay.png);
+	background-position: center;
+	background-size: cover;
+}
 .DepTerminalCity
 {
 	width: 140px;
@@ -312,14 +382,129 @@ article button
 	background-color: white;
 	margin-left: 190px;
 	margin-top: -100px;
-    border-radius: 3px;
+    border-radius: 3px;	
+    background-image: url(./img/city-pay.png);
+	background-position: center;
+	background-size: cover;
 }
 
+.RegulPay
+{
+    background-image: url(./img/regulpay.png);
+	background-position: center;
+	background-size: cover;	
+}
+.AlfaPay
+{
+	background-image: url(./img/alfapay.png);
+	background-position: center;
+	background-size: cover;
 
+}
+.EasyPay
+{
+    background-image: url(./img/easypay.png);
+	background-position: center;
+	background-size: cover;
+}
+.Qiwi
+{
+	background-image: url(./img/qiwi.png);
+	background-position: center;
+	background-size: cover;
+}
+.Withdrawal
+{
+	width: 100vh;
+	height: 545px;
+     background-image: url(./img/background-black.png);
+    background-size: 85px 73.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    display: none;
 
+}
+.TextOpen
+{
+	width: 360px;
+	height: 55px;
+    margin-bottom: 150px;
+    text-align: center;
+    margin-left: 8px;
+    font-size: 14px;
+    color: #7e7e7e;
+}
+.ButtonOpen
+{
+	width: 327px;
+	height: 44px;
+	background-color: white;
+	margin-left: 25px;
+	margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: black;
+    padding-top:11px; 
+    font-weight: bold;
+}
+.BetsHistory
+{
+	width: 100vh;
+	height: 545px;
+	background-color: #353432;
+}
+.HistorySelect
+{
+	width: 100vh;
+	height: 44px;
+	display: flex;
+	text-align: center;
+	font-size: 13px;
+	background-color: #292725;
+    color: #acacac;
+    text-transform: uppercase;
 
-
-
+}
+.HistorySelectOne
+{
+	width:195px;
+	height: 100%;
+	padding-top: 12px;
+	color: white;
+	border-bottom: 3px solid #f5ae1b;
+    border-top: 3px solid transparent;
+}
+.HistorySelectTwo
+{
+	width:195px;
+	height: 100%;
+	padding-top: 12px;
+	border-top: 3px solid transparent;
+}
+.Payment
+{
+	width: 350px; 
+	height:44px;
+	margin-left: 12px;	
+	border-radius: 2px;
+    background-color: #ebebeb;
+    margin-top: 10px;
+    padding-top: 9px;
+}
+.Payment span:first-child
+{
+	font-size: 14px;
+	padding-left: 10px;
+}
+.Payment span:nth-child(2)
+{
+	padding-left: 140px;
+	font-size: 16px;
+}
 .Footer
 {
 	width: 100vh;

@@ -18,8 +18,20 @@
 <nav id="navbar-main">
   <header>
     <p class="text-center">
-      <div class="FormSubmit"><p>Войти</p></div>
-      <div class="FormReg"><p>Регистрация</p></div>
+     <div class="FormSubmit">
+    <div class="UserDepName">
+    <p>Сергей Чёрный</p>
+    <span>ID 1987198</span>
+      </div>
+      <div class="UserDepBalance">
+      <p>50000</p>
+      <div class="GRN">
+        грн
+      </div>
+    </div>
+
+      </div>
+      <div class="FormReg ClickAdd"><p>Пополнить счет </p></div>
       <div class="Support"><p>Служба поддержки</p></div>
     </p>
   </header>
@@ -33,9 +45,9 @@
   </ul>
   <h6>Финансы</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li><a href="#">Пополнить</a></li>
-    <li><a href="#">Вывод средств</a></li>
-    <li ><a href="#">История платежей</a></li>
+    <li class="ClickAdd"><a href="#">Пополнить</a></li>
+    <li class="ClickWithdrawal"><a href="#">Вывод средств</a></li>
+    <li class="ClickHistory"><a href="#">История платежей</a></li>
   </ul>
     <h6>История</h6>
   <ul class="nav nav-pills nav-stacked">
@@ -68,7 +80,7 @@
 <div class="Add">
   <div class="YellowBlock">
     <div class="UserDepName">
-    <p>Сергей Чёрный</p>
+    <p><b>Сергей Чёрный</b></p>
     <span>Номер счета 1987198</span>
     </div>
     <div class="UserDepBalance">
@@ -96,8 +108,64 @@
 <div class="DepTerminalIbox"></div>
 <div class="DepTerminalCity"></div>
 
-<div class="DepTerminalIbox"></div>
-<div class="DepTerminalCity"></div>
+<div class="DepTerminalIbox Bank24"></div>
+<div class="DepTerminalCity RegulPay"></div>
+
+<div class="DepTerminalIbox ePay"></div>
+<div class="DepTerminalCity AlfaPay"></div>
+
+<div class="DepTerminalIbox Privat"></div>
+<div class="DepTerminalCity EasyPay"></div>
+
+<div class="DepTerminalIbox WidePay"></div>
+<div class="DepTerminalCity Qiwi"></div>
+
+
+</div>
+<div class="Withdrawal">
+    <div class="TextOpen"> На данный момент вывести средства можно только с
+    <br> полной версии сайта </div>
+	<div class="ButtonOpen">Открыть полную версию сайта</div>
+</div>
+<div class="BetsHistory">
+	<div class="HistorySelect">
+		<div class="HistorySelectOne">История пополнений</div>
+		<div class="HistorySelectTwo">История выводов </div>
+	</div>
+	<div class="Payment">
+	<span>30.01.17, 04:29:05</span>
+	<span><b>25,00 грн</b></span>
+	 </div>
+
+	 	<div class="Payment">
+	<span>22.01.17, 01:29:05</span>
+	<span><b>26,00 грн</b></span>
+	 </div>
+
+	 	<div class="Payment">
+	<span>20.01.17, 04:09:05</span>
+	<span><b>25,00 грн</b></span>
+	 </div>
+
+	 	<div class="Payment">
+	<span>17.01.17, 10:29:05</span>
+	<span><b>25,00 грн</b></span>
+	 </div>
+
+	 	<div class="Payment">
+	<span>15.01.17, 02:29:05</span>
+	<span><b>25,00 грн</b></span>
+	 </div>
+
+	 	<div class="Payment">
+	<span>10.01.17, 07:29:05</span>
+	<span><b>25,00 грн</b></span>
+	 </div>
+
+	 	<div class="Payment">
+	<span>10.01.17, 08:29:05</span>
+	<span><b>25,00 грн</b></span>
+	 </div>
 </div>
 <div class="Footer">
   <div class="Sport"></div>
@@ -108,5 +176,22 @@
 </div>
 </main>
 <script src="./slideout.js"></script>
+<script type="text/javascript">
+	$('.ClickAdd').click(function () {
+		$('.Add').css({"display":"block"});
+		$('.BetsHistory').css({"display":"none"});
+		$('.Withdrawal').css({"display":"none"});
+	})
+	$('.ClickWithdrawal').click(function () {
+		$('.Add').css({"display":"none"});
+		$('.BetsHistory').css({"display":"none"});
+		$('.Withdrawal').css({"display":"flex"});
+	})
+	$('.ClickHistory').click(function () {
+	$('.Add').css({"display":"none"});
+	$('.Withdrawal').css({"display":"none"});
+	$('.BetsHistory').css({"display":"block"});
+	})
+</script>
 </body>
 </html>
