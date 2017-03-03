@@ -188,6 +188,7 @@ article button
     background-size: 85px 73.5px;
     padding-left: 13px;
     padding-top: 9px;
+    overflow: scroll;
 }
 .YellowBlock
 {
@@ -298,15 +299,20 @@ article button
 	height: 100px;
 	background-color: white;
 	margin-left: 35px;
+	border-radius: 3px;
+	margin-top: 15px;
+	background-image: url(./img/ptica_vetka_oblaka_nebo_siluet_57226_1280x800.png);
+	background-position: center;
+	background-size: cover;
 }
 .DepTerminalCity
 {
 	width: 140px;
 	height: 100px;
 	background-color: white;
-	margin-left: 195px;
+	margin-left: 190px;
 	margin-top: -100px;
-
+    border-radius: 3px;
 }
 
 
