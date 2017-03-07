@@ -32,33 +32,34 @@
 
       </div>
       <div class="FormReg ClickAdd"><p>Пополнить счет </p></div>
-      <div class="Support"><p>Служба поддержки</p></div>
+      <div class="Support"><i class="fa fa-2x fa-headphones" aria-hidden="true"></i>
+<p>Служба поддержки</p></div>
     </p>
   </header>
   <h6>Игры</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li ><a href="#">Главная страница</a></li>
-    <li><a href="#">Спорт</a></li>
-    <li><a href="#">Виртуальный футбол</a></li>
-    <li><a href="#">Виртуальный баскетбол</a></li>
-    <li><a href="#">BetGames</a></li>
+    <li><div class="home-icon"></div><a href="#" class="Main_Page">Главная страница</a></li>
+    <li><div class="home-icon  sport-icon"></div><a href="#" class="Main_Page">Спорт</a></li>
+    <li><div class="home-icon virtual-football-icon"></div><a href="#" class="Main_Page">Виртуальный футбол</a></li>
+    <li><div class="home-icon virtyal-basketball-icon"></div><a href="#" class="Main_Page">Виртуальный баскетбол</a></li>
+    <li><div class="home-icon betGames-icon"></div><a href="#" class="Main_Page">BetGames</a></li>
   </ul>
   <h6>Финансы</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li class="ClickAdd"><a href="#">Пополнить</a></li>
-    <li class="ClickWithdrawal"><a href="#">Вывод средств</a></li>
-    <li class="ClickHistory"><a href="#">История платежей</a></li>
+    <li class="ClickAdd"><div class="home-icon popol-icon"></div><a href="#" class="Main_Page">Пополнить</a></li>
+    <li class="ClickWithdrawal"><div class="home-icon vivod-icon"></div><a href="#" class="Main_Page">Вывод средств</a></li>
+    <li class="ClickHistory"><div class="home-icon history-icon"></div><a href="#" class="Main_Page">История платежей</a></li>
   </ul>
     <h6>История</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li><a href="#">Рассчитанные ставки</a></li>
-    <li><a href="#">Нерассчитанные ставки</a></li>
+    <li><div class="home-icon bets-icon"></div><a href="#" class="Main_Page">Рассчитанные ставки</a></li>
+    <li><div class="home-icon bets2-icon"></div><a href="#" class="Main_Page">Нерассчитанные ставки</a></li>
   </ul>
     <h6>Настройки</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li><a href="#">Формат ставок</a></li>
-    <li><a href="#">Язык</a></li>
-    <li ><a href="#">Правила и условия</a></li>
+    <li><div class="home-icon format-icon"></div><a href="#" class="Main_Page">Формат ставок</a></li>
+    <li><div class="home-icon lang-icon"></div><a href="#" class="Main_Page">Язык</a></li>
+    <li ><div class="home-icon ruls-icon"></div><a href="#" class="Main_Page">Правила и условия</a></li>
   </ul>
   <h6 class="MainSiteLink">Полная версия сайта</h6>
 </nav>
@@ -123,6 +124,7 @@
 
 </div>
 <div class="Withdrawal">
+    <div class="IconOpen"></div>
     <div class="TextOpen"> На данный момент вывести средства можно только с
     <br> полной версии сайта </div>
 	<div class="ButtonOpen">Открыть полную версию сайта</div>
@@ -168,30 +170,59 @@
 	 </div>
 </div>
 <div class="Footer">
-  <div class="Sport"></div>
-  <div class="Live"></div>
-  <div class="Favorites"></div>
-  <div class="SignIn"></div>
-  <div class="Kupon"></div>
+  <div class="Sport">
+  	<div class="iconFooter"></div>
+  	<div class="textFooter">Спорт</div>
+  </div>
+  <div class="Live">
+  	  	<div class="iconFooter"></div>
+  	<div class="textFooter">Live ставки</div>
+  </div>
+  <div class="Favorites">
+  	  	<div class="iconFooter"></div>
+  	<div class="textFooter">Избранные</div>
+  </div>
+  <div class="SignIn">
+  	  	<div class="iconFooter"></div>
+  	<div class="textFooter">1000</div>
+  </div>
+  <div class="Kupon">
+  	  	<div class="iconFooter"></div>
+  	<div class="textFooter">Купон</div>
+  </div>
 </div>
 </main>
 <script src="./slideout.js"></script>
 <script type="text/javascript">
 	$('.ClickAdd').click(function () {
 		$('.Add').css({"display":"block"});
+		$('.SignIn').css({"background-color":"black"});
 		$('.BetsHistory').css({"display":"none"});
 		$('.Withdrawal').css({"display":"none"});
+		$('.Footer').css({"display":"flex"});
+	})
+		$('.SignIn').click(function () {
+		$('.SignIn').css({"background-color":"black"});
+		$('.Add').css({"display":"block"});
+		$('.BetsHistory').css({"display":"none"});
+		$('.Withdrawal').css({"display":"none"});
+		$('.Footer').css({"display":"flex"});
 	})
 	$('.ClickWithdrawal').click(function () {
 		$('.Add').css({"display":"none"});
 		$('.BetsHistory').css({"display":"none"});
 		$('.Withdrawal').css({"display":"flex"});
+		$('.Footer').css({"display":"none"});
+		$('.Withdrawal').css({"height":"600px"});
 	})
 	$('.ClickHistory').click(function () {
 	$('.Add').css({"display":"none"});
+	$('.SignIn').css({"background-color":"#292725"});
 	$('.Withdrawal').css({"display":"none"});
 	$('.BetsHistory').css({"display":"block"});
+	$('.Footer').css({"display":"flex"});
 	})
+
 </script>
 </body>
 </html>

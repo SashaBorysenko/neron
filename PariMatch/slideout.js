@@ -10,7 +10,11 @@ var slideout = new Slideout({
 });
 
 // Default Open
-slideout.open();
+//slideout.open();
+$('.ClickAdd , .ClickWithdrawal , .ClickHistory').click(function () {
+	slideout.close();
+})
+
 
 // Toggle button
 document.querySelector('.toggle-button').addEventListener('click', function() {

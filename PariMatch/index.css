@@ -49,8 +49,9 @@ background-color: black;
 
 #navbar-main ul li a {
   border-radius: 0;
-   color:#d0d0d0;
+  color:#d0d0d0;
   border-bottom:1px solid #3e3c3a;
+
 }
 /*----------*/
 .FormSubmit
@@ -77,6 +78,8 @@ background-color: black;
 .Support p
 {
   color:#d0d0d0;
+  margin-top: -25px;
+  margin-left: 45px;
 }
 .FormReg
 {
@@ -175,9 +178,13 @@ article button
 	padding-left: 253px;
 
 }
-#navbar-main ul li a:focus{
+/*#navbar-main ul li :focus {
   background-color: black;
   color: #f5ae1b;
+  cursor: default;
+}*/
+#navbar-main ul li :focus {
+  background-color: #353432;
   cursor: default;
 }
 .Add
@@ -191,6 +198,100 @@ article button
     padding-bottom: 12px;
     overflow: scroll;
     display: none;
+}
+.home-icon
+{
+	width: 27px;
+	height: 25px;
+	margin-left: 10px;
+	background:url(./img/home-icon.png);
+	background-size: cover;
+	background-position: center center;
+
+}
+
+.sport-icon
+{
+	background:url(./img/sport-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.virtual-football-icon
+{
+    background:url(./img/virtual-football-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.virtyal-basketball-icon
+{
+	background:url(./img/virtyal-basketball-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.betGames-icon
+{
+	background:url(./img/betGames-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.popol-icon
+{
+	background:url(./img/popol-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.vivod-icon
+{
+	background:url(./img/vivod-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.history-icon
+{
+	background:url(./img/history-icon.png);
+	background-size: cover;
+	background-position: center center;
+
+}
+.bets-icon
+{
+	background:url(./img/bets-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.bets2-icon
+{
+	background:url(./img/bets2-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.format-icon
+{
+	background:url(./img/format-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.lang-icon
+{
+	background:url(./img/lang-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.ruls-icon
+{
+	background:url(./img/ruls-icon.png);
+	background-size: cover;
+	background-position: center center;	
+}
+.Support i
+{
+	color:#d0d0d0;
+	margin-left: -130px;
+}
+.Main_Page
+{
+	margin-top: -30px;
+	margin-left: 40px;
 }
 .YellowBlock
 {
@@ -422,6 +523,7 @@ article button
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    overflow: scroll;
     display: none;
 
 }
@@ -434,6 +536,16 @@ article button
     margin-left: 8px;
     font-size: 14px;
     color: #7e7e7e;
+}
+.IconOpen
+{
+	width: 85px;
+	height: 85px;
+	margin-left: 155px;
+    background-image: url(./img/vivod-icon.png);
+	background-position: center;
+	background-size: cover;
+
 }
 .ButtonOpen
 {
@@ -509,9 +621,10 @@ article button
 {
 	width: 100vh;
 	height: 55px;
-	background-color: red;
 	display: flex;
 	align-content: stretch;
+	background-color: #292725;
+	color: #acacac;
 }
 .container
 {
@@ -520,4 +633,55 @@ article button
 .Sport,.Live,.Favorites,.SignIn,.Kupon
 {
 	width: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.Kupon
+{
+	background-color: #f5ae1b;
+    color: #000 !important;
+}
+
+.iconFooter
+{
+	width: 35px;
+	height: 24px;
+    background-image: url(./img/sport-footer.png);
+	background-position: center;
+	background-size: cover;	
+}
+.Live .iconFooter
+{
+
+    background-image: url(./img/live-footer.png);
+	background-position: center;
+	background-size: cover;	
+}
+.Favorites .iconFooter
+{
+
+    background-image: url(./img/favorites-footer.png);
+	background-position: center;
+	background-size: cover;	
+}
+.SignIn .iconFooter
+{
+    background-image: url(./img/popol-icon.png);
+	background-position: center center;
+	background-size: cover;	
+}
+.Kupon .iconFooter
+{
+
+    background-image: url(./img/kupon-footer.png);
+	background-position: center;
+	background-size: cover;	
+
+}
+.textFooter
+{
+	font-size: 10px;
+	margin-top: 3px;
 }
