@@ -13,7 +13,7 @@ background-color: black;
   right: 0;
   z-index: 0;
   width: 256px;
-  height: 644px;
+  height: 643.5px;
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
@@ -22,6 +22,7 @@ background-color: black;
 .slideout-panel {
   position: relative;
   z-index: 1;
+
 }
 
 .slideout-open,
@@ -37,7 +38,7 @@ background-color: black;
 /* Custom */
 #main {
   background: white;
-  height: 644px !important;
+  height: 643.5px !important;
   position: fixed;
 }
 
@@ -568,6 +569,7 @@ article button
 	width: 100vh;
 	height: 545px;
 	background-color: #353432;
+	display: none;
 }
 .HistorySelect
 {
@@ -646,7 +648,7 @@ article button
 
 .iconFooter
 {
-	width: 35px;
+	width: 37px;
 	height: 24px;
     background-image: url(./img/sport-footer.png);
 	background-position: center;
@@ -684,4 +686,627 @@ article button
 {
 	font-size: 10px;
 	margin-top: 3px;
+}
+/*--------*/
+.main_page
+{
+  width: 56.5%;
+  padding: 8px;
+  background-color: #353432;
+  overflow: scroll;
+  height: 545px;
+}
+.search_input
+{
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    margin-bottom: 8px;
+}
+.search_input input
+{
+    display: block;
+    width: 100%;
+    padding: 0 11px 0 32px;
+    border-radius: 2px;
+    border: 0;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+    height: 40px;
+    padding-left: 12px;
+}
+#search_icon
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    left: auto;
+    color: #7e7e7e;
+    margin-top: 5px;
+}
+#search_icon i
+{
+  margin-left: 10px;
+}
+.slider-box
+{
+  background: url(./Img/football.jpg)no-repeat 50% 0/cover;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0 0 8px; 
+  border-radius: 3px;
+  border: 1px solid #000;
+  padding: 9px 9px 0;
+  height: 177px;
+}
+.featured_info
+{
+  
+}
+.featured_live
+{
+  background-color: #f5ae1b;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1;
+  border-radius: 2px;
+}
+.featured_lable
+{
+  border-radius: 0 2px 2px 0;
+  width: 30px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #292725;
+  color: #f5ae1b;
+  height: 22px;
+  line-height: 22px;
+  margin-bottom: 5px;
+  text-align: center;
+}
+.sportcolor
+{
+  background-color:#005411;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+  height: 22px;
+  line-height: 22px;
+  padding: 0 6px;
+  color: #fff;
+  border-radius: 2px;
+  margin-right: 4px;
+  margin-bottom: 5px;
+}
+.star
+{
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  right: 0;
+  width: 42px;
+  height: 42px;
+  line-height: 40px;
+}
+.star i
+{
+  font-size: 25px;
+  color: #d0d0d0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.5);
+  margin-top: 12px;
+  float: right;
+  margin-right: 8px;
+}
+.featured_title
+{
+  background-color: #000;
+  color: #fff;
+  padding: 0 8px;
+  font-size: 12px;
+  float: left;
+  clear: both;
+  margin-bottom: 3px;
+  line-height: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.featured_title b
+{
+  font-size: 17px;
+}
+.featured_market
+{
+  position: absolute;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  height: 42px;
+  border-radius: 0 0 2px 2px;
+  overflow: hidden;
+}
+.open_all
+{
+  text-align: left;
+  position: relative;
+  float: right;
+  background: #fff;
+  line-height: 42px;
+  padding: 0 20px 0 10px;
+  font-size: 14px;
+  border: solid #d0d0d0;
+  border-width: 1px 0 0 1px;
+}
+.all-count
+{
+  float: right;
+}
+.open_all i
+{
+    position: absolute;
+    right: 6px;
+    top: 0;
+    margin-top: 9px;
+    font-size: 20px;
+    color: #7e7e7e;
+    font-weight: normal;
+}
+.market_group
+{
+  overflow: hidden;
+  display: block;
+  border-top: 1px solid #d0d0d0;
+  top:200;
+
+}
+.market_group td
+{
+  height: 42px;
+  margin: 0;
+  padding: 0;
+  border-right: 1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: inherit;
+  text-align: center;
+}
+
+.market_group table
+{
+  height: 100%;
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  background-color: #fff;
+
+}
+.market_group td span
+{
+  font-weight: bold;
+  color: #000;
+  padding-right: 8px;
+}
+ul
+{
+  list-style: none;
+}
+.slider-dots
+{
+    height: 30px;
+    text-align: center;
+    margin-top: -8px;
+    margin-right: 20px;
+}
+.slider-dots li
+{
+  display: inline-block;
+  vertical-align: top;
+}
+.slider-dots li button
+{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    vertical-align: middle;
+    background-color: transparent;
+    font-size: 0;
+    border: none;
+}
+.slider-dots .dot
+{
+    vertical-align: middle;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+    background: #7e7e7e;
+}
+.slider-dots .active .dot
+{
+    background: #fff;
+}
+.all_category
+{
+  height: 44px;
+  padding: 0 8px;
+  overflow: hidden;
+  background-color: #4e4c4a;
+  line-height: 42px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin: 0 -8px 8px;
+  margin-bottom: 0;
+}
+.category_message
+{
+    margin-left: 8px;
+    vertical-align: middle;
+    color: #fff;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.category_accent
+{
+    color: #f5ae1b;
+}
+.category_right
+{
+  float: right;
+}
+.arrow_right
+{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 34px;
+  height: 24px;
+  margin-right: 8px;
+  padding: 0 4px;
+  border-radius: 2px 0 0 2px;
+  background: #f5ae1b;
+  color: #000;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+.triangle
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 12px 0 12px 8px;
+  border-color: transparent transparent transparent #000;
+  border-left-color: #f5ae1b;
+}
+.all_category i
+{
+      position: relative;
+    color: #acacac;
+    display: inline-block;
+    vertical-align: middle;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+}
+.sports_main
+{
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  width: 100%;
+  min-width: 375px;
+    margin: 0 -8px 0px;
+}
+.live-group
+{
+  position: relative;
+  width: 100%;
+  height: 44px;
+  margin: 0;
+  color: #fff;
+  font-size: 16px;
+  font-family: inherit;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 10px; 
+
+}
+.icon_group
+{
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "air-icons";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  speak: none;
+  width: 24px;
+  height: 24px;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  margin-right: 5px;
+}
+.football
+{
+  background-color: #005411
+}
+.fb
+{
+  background-image:  url(./Img/F@2x.png);
+}
+.tennis
+{
+  background-color: #848805;
+}
+.tn
+{
+  background-image: url(./Img/TK@2x.png);
+}
+.basketball
+{
+  background-color: #9d6102;
+}
+.bb
+{
+  background-image: url(./Img/B@2x.png);
+}
+.valleyball
+{
+  background-color: #8b3b01;
+}
+.vb
+{
+  background-image: url(./Img/VB@2x.png);
+}
+.cybersport
+{
+  background-color: #67317b;
+}
+.cs
+{
+  background-image: url(./Img/CyberSport@2x.png);
+}
+.baseball
+{
+  background-color: #053756;
+}
+.bs
+{
+  background-image: url(./Img/Baseball@2x.png);
+}
+.ic_down
+{
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    display: block;
+    color: #9b9b9b;
+    font-size: 6px;
+}
+.block_right
+{
+  float: right;
+  margin-right: 20px;
+  font-size: 14px;
+}
+.popular
+{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.popular .category_right .arrow_right
+{
+  background-color: #fff;
+  color: #000;
+}
+.popular .category_right .triangle
+{
+  border-left-color: #fff;
+}
+.popular i
+{
+  transform: rotate(180deg);
+}
+.novel
+{
+  text-align: center;
+}
+.novel_banner
+{
+    display: inline-block;
+    margin: 8px 5px 0;
+}
+.novel_banner img
+{
+    width: 100%;
+    max-width: 265px;
+    height: auto;
+    border-radius: 3px;
+    vertical-align: top;
+}
+/*--------*/
+.bets_main
+{
+    height: 545px !important;
+    width: 100%;
+    background-color: #353432;
+    overflow: scroll;
+    padding-bottom: 10px;
+    display: none;
+}
+.costyl
+{
+  padding: 7px;
+  background-color: #353432;
+}
+.bet_history
+{   
+    width: 351px;
+    height: 36px;
+    border-radius: 2px;
+    background-color: #292725;
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 11px;
+    font-size: 16px;
+    padding: 7px;
+}
+.bet_history strong
+{
+  color: #f5ae1b;
+  margin-left: 3px;
+}
+.bet_block
+{
+  width: 351px;
+  height: 155px;
+  background-color: #292725;
+  border-top: 2px solid #005411;
+  margin-left: 11px;
+  padding: 8px;
+  margin-bottom: 10px;
+}
+.bet_block_event
+{
+  position: relative;
+  color: #acacac;
+  font-size: 12px;
+  line-height: 25px;
+}
+.bet_block_right
+{
+  float: right;
+}
+.bet_block_left
+{
+  position: relative;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+  color: #acacac;
+}
+.bet_block_left strong
+{
+  color: #acacac;
+  font-weight: bold;
+}
+.bet-block__head
+{
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+.bet-block__detail
+{
+  color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+}
+.bet-block__coefficient
+{
+      padding-right: 5px;
+    color: #f5ae1b;
+    font-weight: bold;
+}
+.bet-block__amount
+{
+  color: #acacac;
+    font-size: 12px;
+  margin-bottom: 5px;
+}
+.bet-block__win
+{
+  color: #199136;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.bet-block__placed
+{
+  color: #acacac;
+    font-size: 12px;
+}
+.bet-block__date
+{
+  color: #acacac;
+  font-size: 12px;
+}
+/*--------------*/
+.BetsTwo
+{
+	width: 100vh;
+	height: 545px;
+	background-color: #353432;
+	display: none;
+}
+.BetsTwo .bet_block
+{
+	height: 200px;
+	margin-top: 20px;
+}
+.BetsTwo .bet_history
+{
+
+}
+.button_bets
+{
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: none;
+  font-weight: normal;
+  color: #000;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-family: inherit;
+  background-color: #f5ae1b;
+  text-align: center;
+}
+.bet-block__win_possible
+{
+  color: #f5ae1b;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.bet-block__win_possible strong
+{
+  font-weight: bold;
+}
+.Dark
+{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin-top: -600px;
+	opacity: 0.5;
+	z-index: 1000;
+	display: none;
+	background-color: black;
 }

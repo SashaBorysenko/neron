@@ -11,7 +11,7 @@ var slideout = new Slideout({
 
 // Default Open
 //slideout.open();
-$('.ClickAdd , .ClickWithdrawal , .ClickHistory').click(function () {
+$('.ClickAdd , .ClickWithdrawal , .ClickHistory, .ClickHome, .ClickBets, .ClickBetsTwo').click(function () {
 	slideout.close();
 })
 
@@ -20,7 +20,9 @@ $('.ClickAdd , .ClickWithdrawal , .ClickHistory').click(function () {
 document.querySelector('.toggle-button').addEventListener('click', function() {
   slideout.toggle();  
 });
-
+document.querySelector('.toggle-button').addEventListener('click', function() {
+  $('.Dark').css({"display":"block"});  
+});
  
  
 

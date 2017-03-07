@@ -38,7 +38,7 @@
   </header>
   <h6>Игры</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li><div class="home-icon"></div><a href="#" class="Main_Page">Главная страница</a></li>
+    <li class="ClickHome"><div class="home-icon"></div><a href="#" class="Main_Page">Главная страница</a></li>
     <li><div class="home-icon  sport-icon"></div><a href="#" class="Main_Page">Спорт</a></li>
     <li><div class="home-icon virtual-football-icon"></div><a href="#" class="Main_Page">Виртуальный футбол</a></li>
     <li><div class="home-icon virtyal-basketball-icon"></div><a href="#" class="Main_Page">Виртуальный баскетбол</a></li>
@@ -52,8 +52,8 @@
   </ul>
     <h6>История</h6>
   <ul class="nav nav-pills nav-stacked">
-    <li><div class="home-icon bets-icon"></div><a href="#" class="Main_Page">Рассчитанные ставки</a></li>
-    <li><div class="home-icon bets2-icon"></div><a href="#" class="Main_Page">Нерассчитанные ставки</a></li>
+    <li class="ClickBets"><div class="home-icon bets-icon"></div><a href="#" class="Main_Page">Рассчитанные ставки</a></li>
+    <li class="ClickBetsTwo"><div class="home-icon bets2-icon"></div><a href="#" class="Main_Page">Нерассчитанные ставки</a></li>
   </ul>
     <h6>Настройки</h6>
   <ul class="nav nav-pills nav-stacked">
@@ -78,6 +78,284 @@
   <div class="FormReg"><p>Регистрация</p></div>
   <div class="Forgot"><p>Забыли пароль?</p></div>
 </div>
+ <div class="main_page">
+    <form class="search_input">
+      <input type="search" name="searchQueryField" placeholder="Поиск">
+      <div id="search_icon">
+      <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+      </div>
+    </form>
+    <div class="slider-box">
+      <div class="featured_info">
+        <span>
+          <span class="featured_live">
+            Live
+          </span>
+          <span class="featured_lable">0:1</span>
+        </span>
+        <div class="sportcolor">Футбол</div>
+        <div class="star">
+          <i class="fa fa-star" aria-hidden="true"></i>
+        </div>
+      </div>
+      <span class="featured_title"> 02.03.2017, 18:05 </span>
+      <span class="featured_title">
+      <b>Атромитос </b>
+      </span>
+      <span class="featured_title">
+        <b>Олимпиакос Пирей </b>
+      </span>
+      <div class="featured_market">
+        <div class="open_all">
+          <span class="all-count">+63</span>
+          <i class="fa fa-angle-right " aria-hidden="true"></i>
+        </div>
+        <div class="market_group">
+          <table>
+            <tr>
+              <td class="outcome">
+                <span>П1</span>
+                 4.20
+              </td>
+              <td class="outcome">
+                <span>Х</span>
+                 4.20
+              </td>
+              <td class="outcome">
+                <span>П2</span>
+                 4.20
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <ul class="slider-dots">
+      <li class="active"><button><span class="dot"></span></button></li>
+      <li><button><span class="dot"></span></button></li>
+      <li><button><span class="dot"></span></button></li>
+      <li><button><span class="dot"></span></button></li>
+      <li><button><span class="dot"></span></button></li>
+      <li><button><span class="dot"></span></button></li>
+    </ul>
+    <div class="all_category">
+      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      <div class="category_right">
+        <span class="arrow_right"> Все <strong>65</strong>
+        <span class="triangle"></span></span>
+
+      </div>
+      <span class="category_message">
+        <span class="category_accent">Live</span>
+        События
+      </span>
+    </div>
+    <div class="sports_main">
+      <div class="live-group football">
+        <i class="icon_group fb"></i>
+        <div = class="ic_down">
+          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+        </div>
+        Футбол
+        <span class="block_right">3</span>
+      </div>
+      <div class="live-group tennis">
+        <i class="icon_group tn"></i>
+        <div = class="ic_down">
+          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+        </div>
+        Теннис
+        <span class="block_right">3</span>
+      </div>
+      <div class="live-group basketball">
+        <i class="icon_group bb"></i>
+        <div = class="ic_down">
+          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+        </div>
+        Баскетбол
+        <span class="block_right">3</span>
+      </div>
+      <div class="live-group baseball">
+        <i class="icon_group bs"></i>
+        <div = class="ic_down">
+          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+        </div>
+        Бейсбол
+        <span class="block_right">3</span>
+      </div>
+      <div class="live-group valleyball">
+        <i class="icon_group vb"></i>
+        <div = class="ic_down">
+          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+        </div>
+        Волейбол
+        <span class="block_right">3</span>
+      </div>
+      <div class="live-group cybersport">
+        <i class="icon_group cs"></i>
+        <div = class="ic_down">
+          <i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+        </div>
+        Киберспорт
+        <span class="block_right">3</span>
+      </div>
+      
+    </div>
+    <div class="popular all_category">
+      <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+      <div class="category_right">
+        <span class="arrow_right"> Все <strong>65</strong>
+        <span class="triangle"></span></span>
+
+      </div>
+      <span class="category_message">
+        Популярные События
+      </span>
+    </div>
+    <div class="novel">
+      <div class="novel_banner">
+        <img src="./Img/betgames.jpg">
+      </div>
+    </div>
+  </div>
+    <div class="bets_main">
+    <div class="costyl"></div>
+    <div class="bet_history">
+      В доигрыше:
+      <strong>3,00 грн</strong>
+    </div>
+    <div class="costyl"></div>
+    <div class="bet_block">
+      <div class="bet_block_event">
+        <span class="bet_block_right"> 05.03.17, 18:00 </span>
+      </div>
+      <div class="bet_block_left">
+        <i class="icon_group fb"></i>
+        <strong>Футбол</strong>
+      </div>
+      <h2 class="bet-block__head"> Сандерленд - Манчестер Сити </h2>
+      <div class="bet-block__row">
+        <span class="bet-block__detail"> Результат матча. П2 </span>
+        <span class="bet-block__coefficient">1.30</span>
+      </div>
+        <div class="bet-block__row">
+      <div class="bet-block__amount">Ставка: 3,00 грн </div>
+    </div>
+    <div class="bet-block__row">
+      <div class="bet-block__win">
+       Выигрыш: <strong>3,90 грн</strong>
+       </div>
+    </div>
+    <div class="bet-block__row">
+      <span class="bet-block__placed">№ 71 </span>
+      <span class="bet-block__date">Дата ставки : 05.03.17, 02:05:00</span>
+    </div>
+    </div>
+    <div class="bet_block">
+      <div class="bet_block_event">
+        <span class="bet_block_right"> 05.03.17, 18:00 </span>
+      </div>
+      <div class="bet_block_left">
+        <i class="icon_group fb"></i>
+        <strong>Футбол</strong>
+      </div>
+      <h2 class="bet-block__head"> Сандерленд - Манчестер Сити </h2>
+      <div class="bet-block__row">
+        <span class="bet-block__detail"> Результат матча. П2 </span>
+        <span class="bet-block__coefficient">1.30</span>
+      </div>
+        <div class="bet-block__row">
+      <div class="bet-block__amount">Ставка: 3,00 грн </div>
+    </div>
+    <div class="bet-block__row">
+      <div class="bet-block__win">
+       Выигрыш: <strong>3,90 грн</strong>
+       </div>
+    </div>
+    <div class="bet-block__row">
+      <span class="bet-block__placed">№ 71 </span>
+      <span class="bet-block__date">Дата ставки : 05.03.17, 02:05:00</span>
+    </div>
+    </div>
+    <div class="bet_block">
+      <div class="bet_block_event">
+        <span class="bet_block_right"> 05.03.17, 18:00 </span>
+      </div>
+      <div class="bet_block_left">
+        <i class="icon_group fb"></i>
+        <strong>Футбол</strong>
+      </div>
+      <h2 class="bet-block__head"> Сандерленд - Манчестер Сити </h2>
+      <div class="bet-block__row">
+        <span class="bet-block__detail"> Результат матча. П2 </span>
+        <span class="bet-block__coefficient">1.30</span>
+      </div>
+        <div class="bet-block__row">
+      <div class="bet-block__amount">Ставка: 3,00 грн </div>
+    </div>
+    <div class="bet-block__row">
+      <div class="bet-block__win">
+       Выигрыш: <strong>3,90 грн</strong>
+       </div>
+    </div>
+    <div class="bet-block__row">
+      <span class="bet-block__placed">№ 71 </span>
+      <span class="bet-block__date">Дата ставки : 05.03.17, 02:05:00</span>
+    </div>
+    </div>
+    <div class="bet_block">
+      <div class="bet_block_event">
+        <span class="bet_block_right"> 05.03.17, 18:00 </span>
+      </div>
+      <div class="bet_block_left">
+        <i class="icon_group fb"></i>
+        <strong>Футбол</strong>
+      </div>
+      <h2 class="bet-block__head"> Сандерленд - Манчестер Сити </h2>
+      <div class="bet-block__row">
+        <span class="bet-block__detail"> Результат матча. П2 </span>
+        <span class="bet-block__coefficient">1.30</span>
+      </div>
+        <div class="bet-block__row">
+      <div class="bet-block__amount">Ставка: 3,00 грн </div>
+    </div>
+    <div class="bet-block__row">
+      <div class="bet-block__win">
+       Выигрыш: <strong>3,90 грн</strong>
+       </div>
+    </div>
+    <div class="bet-block__row">
+      <span class="bet-block__placed">№ 71 </span>
+      <span class="bet-block__date">Дата ставки : 05.03.17, 02:05:00</span>
+    </div>
+    </div>
+    <div class="bet_block">
+      <div class="bet_block_event">
+        <span class="bet_block_right"> 05.03.17, 18:00 </span>
+      </div>
+      <div class="bet_block_left">
+        <i class="icon_group fb"></i>
+        <strong>Футбол</strong>
+      </div>
+      <h2 class="bet-block__head"> Сандерленд - Манчестер Сити </h2>
+      <div class="bet-block__row">
+        <span class="bet-block__detail"> Результат матча. П2 </span>
+        <span class="bet-block__coefficient">1.30</span>
+      </div>
+        <div class="bet-block__row">
+      <div class="bet-block__amount">Ставка: 3,00 грн </div>
+    </div>
+    <div class="bet-block__row">
+      <div class="bet-block__win">
+       Выигрыш: <strong>3,90 грн</strong>
+       </div>
+    </div>
+    <div class="bet-block__row">
+      <span class="bet-block__placed">№ 71 </span>
+      <span class="bet-block__date">Дата ставки : 05.03.17, 02:05:00</span>
+    </div>
+    </div>
+  </div>
 <div class="Add">
   <div class="YellowBlock">
     <div class="UserDepName">
@@ -169,6 +447,43 @@
 	<span><b>25,00 грн</b></span>
 	 </div>
 </div>
+<div class="BetsTwo">
+    <div class="costyl"></div>
+    <div class="bet_history">
+      В доигрыше:
+      <strong>3,00 грн</strong>
+    </div>
+	<div class="bet_block">
+      <div class="bet_block_event">
+        <span class="bet_block_right"> 05.03.17, 18:00 </span>
+      </div>
+      <div class="bet_block_left">
+        <i class="icon_group fb"></i>
+        <strong>Футбол</strong>
+      </div>
+      <h2 class="bet-block__head"> Сандерленд - Манчестер Сити </h2>
+      <div class="bet-block__row">
+        <span class="bet-block__detail"> Результат матча. П2 </span>
+        <span class="bet-block__coefficient">1.30</span>
+      </div>
+        <div class="bet-block__row">
+      <div class="bet-block__amount">Ставка: 3,00 грн </div>
+    </div>
+    <div class="bet-block__row">
+      <div class="bet-block__win_possible">
+        Возможный выигрыш: <strong>3,90 грн</strong>
+       </div>
+    </div>
+    <div class="bet-block__row">
+      <span class="bet-block__placed">№ 71 </span>
+      <span class="bet-block__date">Дата ставки : 05.03.17, 02:05:00</span>
+    </div>
+    <div class="bet-block__row">
+        <div class="button_bets">CashOut: 2,60 грн</div>
+    </div>
+</div>
+</div>
+<div class="Dark"></div>
 <div class="Footer">
   <div class="Sport">
   	<div class="iconFooter"></div>
@@ -194,33 +509,80 @@
 </main>
 <script src="./slideout.js"></script>
 <script type="text/javascript">
+
+	$('.ClickHome').click(function () {
+		$('.Add').css({"display":"none"});
+		$('.main_page').css({"display":"block"});
+		$('.BetsHistory').css({"display":"none"});
+		$('.Withdrawal').css({"display":"none"});
+		$('.bets_main').css({"display":"none"});
+		$('.Footer').css({"display":"flex"});
+		$('.BetsTwo').css({"display":"none"});
+		$('.Dark').css({"display":"none"});
+	})
 	$('.ClickAdd').click(function () {
 		$('.Add').css({"display":"block"});
+		$('.main_page').css({"display":"none"});
 		$('.SignIn').css({"background-color":"black"});
 		$('.BetsHistory').css({"display":"none"});
 		$('.Withdrawal').css({"display":"none"});
+		$('.bets_main').css({"display":"none"});
 		$('.Footer').css({"display":"flex"});
+		$('.BetsTwo').css({"display":"none"});
+		$('.Dark').css({"display":"none"});
 	})
 		$('.SignIn').click(function () {
 		$('.SignIn').css({"background-color":"black"});
+		$('.main_page').css({"display":"none"});
 		$('.Add').css({"display":"block"});
+		$('.bets_main').css({"display":"none"});
 		$('.BetsHistory').css({"display":"none"});
 		$('.Withdrawal').css({"display":"none"});
 		$('.Footer').css({"display":"flex"});
+		$('.BetsTwo').css({"display":"none"});
+		$('.Dark').css({"display":"none"});
 	})
 	$('.ClickWithdrawal').click(function () {
 		$('.Add').css({"display":"none"});
 		$('.BetsHistory').css({"display":"none"});
+		$('.main_page').css({"display":"none"});
 		$('.Withdrawal').css({"display":"flex"});
 		$('.Footer').css({"display":"none"});
+		$('.bets_main').css({"display":"none"});
 		$('.Withdrawal').css({"height":"600px"});
+		$('.BetsTwo').css({"display":"none"});
+		$('.Dark').css({"display":"none"});
 	})
 	$('.ClickHistory').click(function () {
 	$('.Add').css({"display":"none"});
+		$('.main_page').css({"display":"none"});
 	$('.SignIn').css({"background-color":"#292725"});
 	$('.Withdrawal').css({"display":"none"});
+	$('.bets_main').css({"display":"none"});
 	$('.BetsHistory').css({"display":"block"});
 	$('.Footer').css({"display":"flex"});
+	$('.BetsTwo').css({"display":"none"});
+	$('.Dark').css({"display":"none"});
+	})
+	$('.ClickBets').click(function () {
+	$('.Add').css({"display":"none"});
+	$('.main_page').css({"display":"none"});
+	$('.Withdrawal').css({"display":"none"});
+	$('.BetsHistory').css({"display":"none"});
+	$('.bets_main').css({"display":"block"});
+	$('.Footer').css({"display":"flex"});
+	$('.BetsTwo').css({"display":"none"});
+	$('.Dark').css({"display":"none"});
+	})
+    $('.ClickBetsTwo').click(function () {
+	$('.Add').css({"display":"none"});
+	$('.main_page').css({"display":"none"});
+	$('.Withdrawal').css({"display":"none"});
+	$('.BetsHistory').css({"display":"none"});
+	$('.bets_main').css({"display":"none"});
+	$('.Footer').css({"display":"flex"});
+	$('.BetsTwo').css({"display":"block"});
+	$('.Dark').css({"display":"none"});
 	})
 
 </script>
