@@ -5,10 +5,18 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="apple-touch-icon" href="./img/PM57.png"/>
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-touch-fullscreen" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+
 <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon media=all">
 <link href="./Soft/bootstrap-3.3.5-dist/css/bootstrap.css" rel="stylesheet">
 <link href="./index.css" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./Soft/font-awesome-4.5.0/css/font-awesome.css">
+
 
 <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
@@ -32,7 +40,7 @@
 
       </div>
       <div class="FormReg ClickAdd"><p>Пополнить счет </p></div>
-      <div class="Support"><i class="fa fa-2x fa-headphones" aria-hidden="true"></i>
+      <div class="Support"><div class="Sup-icon"></div>
 <p>Служба поддержки</p></div>
     </p>
   </header>
@@ -43,6 +51,7 @@
     <li><div class="home-icon virtual-football-icon"></div><a href="#" class="Main_Page">Виртуальный футбол</a></li>
     <li><div class="home-icon virtyal-basketball-icon"></div><a href="#" class="Main_Page">Виртуальный баскетбол</a></li>
     <li><div class="home-icon betGames-icon"></div><a href="#" class="Main_Page">BetGames</a></li>
+    <li><div class="home-icon Casino-icon"></div><a href="#" class="Main_Page">LiveCasino</a></li>
   </ul>
   <h6>Финансы</h6>
   <ul class="nav nav-pills nav-stacked">
@@ -60,6 +69,7 @@
     <li><div class="home-icon format-icon"></div><a href="#" class="Main_Page">Формат ставок</a></li>
     <li><div class="home-icon lang-icon"></div><a href="#" class="Main_Page">Язык</a></li>
     <li ><div class="home-icon ruls-icon"></div><a href="#" class="Main_Page">Правила и условия</a></li>
+    <li ><div class="home-icon exit-icon"></div><a href="#" class="Main_Page">Выйти</a></li>
   </ul>
   <h6 class="MainSiteLink">Полная версия сайта</h6>
 </nav>
@@ -67,9 +77,10 @@
 <main id="main">
   <div class="container">
    <article>
-      <button type="button" class="toggle-button" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+      <button type="button" class="toggle-button btn btn-link" data-toggle="button" aria-pressed="false" autocomplete="off"><i class="fa fa-bars fa-2x" aria-hidden="true"></i>
     </button>
-    </article> 
+    <div class="header-icon"></div> 
+    </article>
   </div>
 <div class="Registr">
   <input type="text" name="Login" placeholder="Логин" class="Login">
@@ -78,7 +89,7 @@
   <div class="FormReg"><p>Регистрация</p></div>
   <div class="Forgot"><p>Забыли пароль?</p></div>
 </div>
- <div class="main_page">
+ <div class="first_main_page">
     <form class="search_input">
       <input type="search" name="searchQueryField" placeholder="Поиск">
       <div id="search_icon">
@@ -214,7 +225,7 @@
     </div>
     <div class="novel">
       <div class="novel_banner">
-        <img src="./Img/betgames.jpg">
+        <img src="./img/betgames.jpg">
       </div>
     </div>
   </div>
@@ -483,7 +494,7 @@
     </div>
 </div>
 </div>
-<div class="Dark"></div>
+<!--<div class="Dark"></div>-->
 <div class="Footer">
   <div class="Sport">
   	<div class="iconFooter"></div>
@@ -512,17 +523,20 @@
 
 	$('.ClickHome').click(function () {
 		$('.Add').css({"display":"none"});
-		$('.main_page').css({"display":"block"});
+		$('.first_main_page').css({"display":"block"});
+		$('.SignIn').css({"background-color":"#292725"});
 		$('.BetsHistory').css({"display":"none"});
 		$('.Withdrawal').css({"display":"none"});
 		$('.bets_main').css({"display":"none"});
 		$('.Footer').css({"display":"flex"});
 		$('.BetsTwo').css({"display":"none"});
 		$('.Dark').css({"display":"none"});
+		$('.header-icon').text("");
+		$('.header-icon').css({"background-image":"url(./img/pm-logo.png)"});
 	})
 	$('.ClickAdd').click(function () {
 		$('.Add').css({"display":"block"});
-		$('.main_page').css({"display":"none"});
+		$('.first_main_page').css({"display":"none"});
 		$('.SignIn').css({"background-color":"black"});
 		$('.BetsHistory').css({"display":"none"});
 		$('.Withdrawal').css({"display":"none"});
@@ -530,10 +544,12 @@
 		$('.Footer').css({"display":"flex"});
 		$('.BetsTwo').css({"display":"none"});
 		$('.Dark').css({"display":"none"});
+		$('.header-icon').text("Пополнить счет");
+		$('.header-icon').css({"background-image":"none"});
 	})
 		$('.SignIn').click(function () {
 		$('.SignIn').css({"background-color":"black"});
-		$('.main_page').css({"display":"none"});
+		$('.first_main_page').css({"display":"none"});
 		$('.Add').css({"display":"block"});
 		$('.bets_main').css({"display":"none"});
 		$('.BetsHistory').css({"display":"none"});
@@ -541,21 +557,26 @@
 		$('.Footer').css({"display":"flex"});
 		$('.BetsTwo').css({"display":"none"});
 		$('.Dark').css({"display":"none"});
+		$('.header-icon').text("Пополнить счет");
+		$('.header-icon').css({"background-image":"none"});
 	})
 	$('.ClickWithdrawal').click(function () {
 		$('.Add').css({"display":"none"});
 		$('.BetsHistory').css({"display":"none"});
-		$('.main_page').css({"display":"none"});
+		$('.first_main_page').css({"display":"none"});
 		$('.Withdrawal').css({"display":"flex"});
 		$('.Footer').css({"display":"none"});
 		$('.bets_main').css({"display":"none"});
 		$('.Withdrawal').css({"height":"600px"});
+		$('.SignIn').css({"background-color":"#292725"});
 		$('.BetsTwo').css({"display":"none"});
 		$('.Dark').css({"display":"none"});
+		$('.header-icon').text("Вывод средств");
+		$('.header-icon').css({"background-image":"none"});
 	})
 	$('.ClickHistory').click(function () {
 	$('.Add').css({"display":"none"});
-		$('.main_page').css({"display":"none"});
+	$('.first_main_page').css({"display":"none"});
 	$('.SignIn').css({"background-color":"#292725"});
 	$('.Withdrawal').css({"display":"none"});
 	$('.bets_main').css({"display":"none"});
@@ -563,26 +584,34 @@
 	$('.Footer').css({"display":"flex"});
 	$('.BetsTwo').css({"display":"none"});
 	$('.Dark').css({"display":"none"});
+	$('.header-icon').text("История платежей");
+	$('.header-icon').css({"background-image":"none"});
 	})
 	$('.ClickBets').click(function () {
 	$('.Add').css({"display":"none"});
-	$('.main_page').css({"display":"none"});
+	$('.first_main_page').css({"display":"none"});
 	$('.Withdrawal').css({"display":"none"});
 	$('.BetsHistory').css({"display":"none"});
+	$('.SignIn').css({"background-color":"#292725"});
 	$('.bets_main').css({"display":"block"});
 	$('.Footer').css({"display":"flex"});
 	$('.BetsTwo').css({"display":"none"});
 	$('.Dark').css({"display":"none"});
+	$('.header-icon').text("Рассчитанные");
+	$('.header-icon').css({"background-image":"none"});
 	})
     $('.ClickBetsTwo').click(function () {
 	$('.Add').css({"display":"none"});
-	$('.main_page').css({"display":"none"});
+	$('.first_main_page').css({"display":"none"});
 	$('.Withdrawal').css({"display":"none"});
+	$('.SignIn').css({"background-color":"#292725"});
 	$('.BetsHistory').css({"display":"none"});
 	$('.bets_main').css({"display":"none"});
 	$('.Footer').css({"display":"flex"});
 	$('.BetsTwo').css({"display":"block"});
 	$('.Dark').css({"display":"none"});
+	$('.header-icon').text("Нерассчитанные");
+	$('.header-icon').css({"background-image":"none"});
 	})
 
 </script>

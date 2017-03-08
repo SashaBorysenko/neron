@@ -40,6 +40,7 @@ background-color: black;
   background: white;
   height: 643.5px !important;
   position: fixed;
+  width: 375px;
 }
 
 #navbar-main {
@@ -73,14 +74,14 @@ background-color: black;
   width: 90%;
   height: 45px;
   padding-top: 10px;
-  margin-left: 11px; 
+  margin-left: 5px; 
   text-align: center;
 }
 .Support p
 {
   color:#d0d0d0;
-  margin-top: -25px;
-  margin-left: 45px;
+  margin-top: -23px;
+  margin-left: 55px;
 }
 .FormReg
 {
@@ -188,9 +189,15 @@ article button
   background-color: #353432;
   cursor: default;
 }
+.nav > li > a:hover
+{
+      background-color: #353432;
+  cursor: default;
+}
+
 .Add
 {
-	width: 100vh;
+	width: 375px;
 	height: 545px;
 	background-image: url(./img/background-black.png);
     background-size: 85px 73.5px;
@@ -202,8 +209,8 @@ article button
 }
 .home-icon
 {
-	width: 27px;
-	height: 25px;
+	width: 25px;
+	height: 23px;
 	margin-left: 10px;
 	background:url(./img/home-icon.png);
 	background-size: cover;
@@ -232,6 +239,12 @@ article button
 .betGames-icon
 {
 	background:url(./img/betGames-icon.png);
+	background-size: cover;
+	background-position: center center;
+}
+.Casino-icon
+{
+	background:url(./img/casino-icon.png);
 	background-size: cover;
 	background-position: center center;
 }
@@ -284,10 +297,21 @@ article button
 	background-size: cover;
 	background-position: center center;	
 }
-.Support i
+.exit-icon
 {
-	color:#d0d0d0;
-	margin-left: -130px;
+	background:url(./img/exit-icon.png);
+	background-size: cover;
+	background-position: center center;		
+}
+.Sup-icon
+{
+	width: 24px;
+	height: 25px;
+	background-color: red;
+	margin-left: 45px;
+	background:url(./img/support-icon.png);
+	background-size: cover;
+	background-position: center center;	
 }
 .Main_Page
 {
@@ -296,7 +320,7 @@ article button
 }
 .YellowBlock
 {
-	width: 53.5%;
+	width: 97%;
 	height: 150px;
 	border-radius: 2px;
 	background-image: linear-gradient(180deg,#fddb14 0%,#f5ae1b 100%);
@@ -434,7 +458,7 @@ article button
 }
 .DepTerminal
 {
-	width: 365px;
+	width: 350px;
 	text-align: center;
 	font-size: 15px;
 	color: white;
@@ -517,7 +541,7 @@ article button
 }
 .Withdrawal
 {
-	width: 100vh;
+	width: 375px;
 	height: 545px;
      background-image: url(./img/background-black.png);
     background-size: 85px 73.5px;
@@ -566,14 +590,14 @@ article button
 }
 .BetsHistory
 {
-	width: 100vh;
+	width: 375px;
 	height: 545px;
 	background-color: #353432;
 	display: none;
 }
 .HistorySelect
 {
-	width: 100vh;
+	width: 375px;
 	height: 44px;
 	display: flex;
 	text-align: center;
@@ -621,7 +645,7 @@ article button
 }
 .Footer
 {
-	width: 100vh;
+	width: 375px;
 	height: 55px;
 	display: flex;
 	align-content: stretch;
@@ -670,7 +694,7 @@ article button
 }
 .SignIn .iconFooter
 {
-    background-image: url(./img/popol-icon.png);
+    background-image: url(./img/cash-icon.png);
 	background-position: center center;
 	background-size: cover;	
 }
@@ -688,9 +712,9 @@ article button
 	margin-top: 3px;
 }
 /*--------*/
-.main_page
+.first_main_page
 {
-  width: 56.5%;
+  width: 375px;
   padding: 8px;
   background-color: #353432;
   overflow: scroll;
@@ -734,7 +758,7 @@ article button
 }
 .slider-box
 {
-  background: url(./Img/football.jpg)no-repeat 50% 0/cover;
+  background: url(./img/football.jpg)no-repeat 50% 0/cover;
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -1055,7 +1079,7 @@ ul
 }
 .fb
 {
-  background-image:  url(./Img/F@2x.png);
+  background-image:  url(./img/F@2x.png);
 }
 .tennis
 {
@@ -1063,7 +1087,7 @@ ul
 }
 .tn
 {
-  background-image: url(./Img/TK@2x.png);
+  background-image: url(./img/TK@2x.png);
 }
 .basketball
 {
@@ -1071,7 +1095,7 @@ ul
 }
 .bb
 {
-  background-image: url(./Img/B@2x.png);
+  background-image: url(./img/B@2x.png);
 }
 .valleyball
 {
@@ -1079,7 +1103,7 @@ ul
 }
 .vb
 {
-  background-image: url(./Img/VB@2x.png);
+  background-image: url(./img/VB@2x.png);
 }
 .cybersport
 {
@@ -1087,7 +1111,7 @@ ul
 }
 .cs
 {
-  background-image: url(./Img/CyberSport@2x.png);
+  background-image: url(./img/CyberSport@2x.png);
 }
 .baseball
 {
@@ -1095,7 +1119,7 @@ ul
 }
 .bs
 {
-  background-image: url(./Img/Baseball@2x.png);
+  background-image: url(./img/Baseball@2x.png);
 }
 .ic_down
 {
@@ -1151,7 +1175,7 @@ ul
 .bets_main
 {
     height: 545px !important;
-    width: 100%;
+    width: 375px;
     background-color: #353432;
     overflow: scroll;
     padding-bottom: 10px;
@@ -1260,7 +1284,7 @@ ul
 /*--------------*/
 .BetsTwo
 {
-	width: 100vh;
+	width: 375px;
 	height: 545px;
 	background-color: #353432;
 	display: none;
@@ -1309,4 +1333,20 @@ ul
 	z-index: 1000;
 	display: none;
 	background-color: black;
+}
+.header-icon
+{
+	width: 138px;
+	height: 29px;
+	background-color: white;
+	margin-left: 140px;
+	margin-top: -40px;
+	color: #000;
+	font-size: 14px;
+	padding-top: 5px;
+	font-weight: bold;
+	background-image: url(./img/pm-logo.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
 }
