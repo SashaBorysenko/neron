@@ -11,7 +11,7 @@ var slideout = new Slideout({
 
 // Default Open
 //slideout.open();
-$('.ClickAdd , .ClickWithdrawal , .ClickHistory, .ClickHome, .ClickBets, .ClickBetsTwo').click(function () {
+$('.ClickAdd , .ClickWithdrawal , .ClickHistory, .ClickHome, .ClickBets, .ClickBetsTwo, .ClickSport').click(function () {
 	slideout.close();
 })
 

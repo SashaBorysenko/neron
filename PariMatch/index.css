@@ -59,7 +59,7 @@ background-color: black;
 .FormSubmit
 {
   width: 90%;
-  height: 68px;
+  height: 75px;
   background-color: white;
   margin-left: 11px; 
   text-align: center;
@@ -145,8 +145,8 @@ article button
     display: flex;
     flex-direction: column;
     padding-left: 14px;
-    padding-top: 100px;
-    
+    padding-top: 100px;  
+    display: block;  
 }
 .Login
 {
@@ -325,6 +325,8 @@ article button
 {
 	margin-top: -30px;
 	margin-left: 40px;
+
+
 }
 .YellowBlock
 {
@@ -1379,4 +1381,175 @@ ul
 	background-position: center;
 	background-size: contain;
 	background-repeat: no-repeat;
+}
+/* Sports all*/
+.all_sports
+{
+  width: 375px;
+  background-color: #353432;
+  overflow: scroll;
+  height: 545px;
+  display: none;
+}
+.prematch_block
+{
+  width: 100%;
+  min-width: 375px;
+  position: relative;
+  height: 42px;
+  padding-right: 8px;
+  border-bottom: 1px solid #4e4c4a;
+  background-color: #353432;
+}
+.prematch_block_icon
+{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 42px;
+  height: 100%;
+  border: none;
+  background: none;
+  text-align: center;
+
+}
+.prematch_block_icon i
+{
+  margin-top: 7px;
+}
+.prematch-block__text
+{
+  overflow: hidden;
+  font-size: 16px;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #d0d0d0;
+      padding-left: 42px;
+}
+.prematch_block_content
+{
+      display: block;
+    height: 100%;
+    overflow: hidden;
+    border: none;
+    background: none;
+    color: #d0d0d0;
+    font-family: inherit;
+    text-decoration: none;
+}
+.icon_right
+{
+  position: absolute;
+  top: 35%;
+  right: 8px;
+  display: block;
+  margin-top: -4px;
+  color: #9b9b9b;
+  font-size: 6px;
+}
+.football
+{
+  background-color: #005411
+}
+.fb
+{
+  background-image:  url(./img/F@2x.png);
+}
+.tennis
+{
+  background-color: #848805;
+}
+.tn
+{
+  background-image: url(./img/TK@2x.png);
+}
+.basketball
+{
+  background-color: #9d6102;
+}
+
+.bb
+{
+  background-image: url(./img/B@2x.png);
+}
+.valleyball
+{
+  background-color: #8b3b01;
+}
+.vb
+{
+  background-image: url(./img/VB@2x.png);
+}
+.cybersport
+{
+  background-color: #67317b;
+}
+.cs
+{
+  background-image: url(./img/CyberSport@2x.png);
+}
+.baseball
+{
+  background-color: #053756;
+}
+.bs
+{
+  background-image: url(./img/Baseball@2x.png);
+}
+.am
+{
+  background-image: url(./img/AutoMoto@2x.png);
+}
+.by
+{
+  background-image: url(./img/Bandy@2x.png);
+}
+.badmin
+{
+  background-image: url(./img/Badminton@2x.png);
+}
+.biatlon
+{
+  background-image: url(./img/Biathlon@2x.png); 
+}
+.box
+{
+  background-image: url(./img/Box@2x.png); 
+}
+.cricket
+{
+ background-image: url(./img/Cricket@2x.png);  
+}
+.cycle
+{
+  background-image: url(./img/CycleRacing@2x.png);
+}
+.florb
+{
+  background-image: url(./img/Floorball@2x.png);
+}
+.hc
+{
+  background-image: url(./img/H@2x.png);
+}
+.footz
+{
+  background-image: url(./img/FZ@2x.png);
+}
+.golf
+{
+  background-image: url(./img/Golf@2x.png);
+}
+.hb
+{
+ background-image: url(./img/HB@2x.png);  
+}
+.pill
+{
+  background-image: url(./img/Pill@2x.png);
+}
+.rugby
+{
+  background-image: url(./img/Rugby@2x.png);
 }
