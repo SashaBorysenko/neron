@@ -25,8 +25,9 @@
 <body>
 <nav id="navbar-main">
   <header>
+  <div class="FormHidden">
     <p class="text-center">
-     <div class="FormSubmit">
+     <div class="FormSubmit ">
     <div class="UserDepName">
     <p>Сергей Чёрный</p>
     <span>ID 1987198</span>
@@ -43,6 +44,7 @@
       <div class="Support"><div class="Sup-icon"></div>
 <p>Служба поддержки</p></div>
     </p>
+    </div>
   </header>
   <h6>Игры</h6>
   <ul class="nav nav-pills nav-stacked">
@@ -84,10 +86,10 @@
   </div>
 <div class="Registr">
   <input type="text" name="Login" placeholder="Логин" class="Login">
-  <input type="password" name="Password" placeholder="Пароль" class="Password">
+  <input type="password" name="Password" placeholder="Введите пароль" class="Password">
   <div class="FormSubmit"><p>Войти</p></div>
   <div class="FormReg"><p>Регистрация</p></div>
-  <div class="Forgot"><p>Забыли пароль?</p></div>
+  <!--<div class="Forgot"><p>Забыли пароль?</p></div>-->
 </div>
  <div class="first_main_page">
     <form class="search_input">
@@ -613,7 +615,23 @@
 	$('.header-icon').text("Нерассчитанные");
 	$('.header-icon').css({"background-image":"none"});
 	})
+    $(function () {
+    $('.FormSubmit').click(function () {
+       test = $("input:password").val();
+       if (test == '123') {
+       	$('.Registr').css({"display":"none"});
+       	$('.first_main_page').css({"display":"block"});
+       	$('.Footer').css({"display":"flex"});
+       	$('.FormHidden').css({"display":"block"});
+       	
+       }
 
+       else {
+       	$("input:password").css({"background-color":"#B22222"});
+       }
+    	})
+    })
+    
 </script>
 </body>
 </html>

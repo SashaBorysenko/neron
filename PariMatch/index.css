@@ -68,7 +68,10 @@ background-color: black;
   opacity: 0.9;
 
 }
-
+.FormHidden
+{
+	display: none;
+}
 .Support
 {
   width: 90%;
@@ -97,7 +100,7 @@ background-color: black;
 .FormSubmit p, .FormReg p
 {
   text-transform: uppercase;
-  padding-top:4%; 
+  padding-top:7%; 
   font-weight: bold;
   font-size: 16px;
   color: #000;
@@ -135,19 +138,23 @@ article button
 }
 .Registr
 {
-	width: 100vh;
-	height: 545px;
+	width: 375px;
+	height: 595px;
 	background-image: url(./img/background-black.png);
     background-size: 85px 73.5px;
     display: flex;
     flex-direction: column;
     padding-left: 14px;
     padding-top: 100px;
-    display: none;
+    
 }
-.Login,.Password
+.Login
 {
-	width: 53.5%;
+	display: none;
+}
+.Password
+{
+	width: 95%;
 	height: 48px;
 	border: 0;
     border: 1px solid #000;
@@ -160,17 +167,18 @@ article button
 
 .FormSubmit:nth-child(3)
 {
-   width: 53.5%;
+   width: 95%;
    margin: 0;
    margin-top: 12px;
 }
 .FormReg:nth-child(4)
 {
-   width: 53.5%;
+   width: 95%;
    margin: 0;
    margin-top: 10px;
+   display: none;
 }
-.Forgot
+/*.Forgot
 {
 	margin-top: 10px;
 }
@@ -180,7 +188,7 @@ article button
 	padding-left: 253px;
 
 }
-/*#navbar-main ul li :focus {
+#navbar-main ul li :focus {
   background-color: black;
   color: #f5ae1b;
   cursor: default;
@@ -651,6 +659,7 @@ article button
 	align-content: stretch;
 	background-color: #292725;
 	color: #acacac;
+	display: none;
 }
 .container
 {
@@ -719,6 +728,7 @@ article button
   background-color: #353432;
   overflow: scroll;
   height: 545px;
+  display: none;
 }
 .search_input
 {
@@ -1334,6 +1344,7 @@ ul
 	display: none;
 	background-color: black;
 }
+
 .header-icon
 {
 	width: 138px;
